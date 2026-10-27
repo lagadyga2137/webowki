@@ -1,0 +1,127 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f6f9;
+}
+
+header {
+  background: #1e3a5f;
+  color: #fff;
+}
+
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo { font-size: 1.4rem; font-weight: bold; }
+
+.nav ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
+
+.nav a { color: #fff; text-decoration: none; padding: 4px 0; }
+.nav a:hover, .nav a.active { border-bottom: 2px solid #4fc3f7; }
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 { color: #1e3a5f; margin-bottom: 20px; }
+
+p { margin-bottom: 16px; }
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slides { display: flex; transition: transform 0.5s ease; }
+
+.slides img { width: 100%; flex-shrink: 0; display: block; }
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.slider .prev { left: 10px; }
+.slider .next { right: 10px; }
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th { background: #1e3a5f; color: #fff; }
+
+tr:nth-child(even) { background: #f4f6f9; }
+
+td:last-child { text-align: right; white-space: nowrap; }
+
+/* Formularz */
+form { max-width: 600px; }
+
+label { display: block; margin: 16px 0 6px; font-weight: 600; }
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea { min-height: 150px; resize: vertical; }
+
+form button {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #1e3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover { background: #2c5282; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
